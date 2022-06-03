@@ -10,6 +10,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+a {
+  color: black;
+}
+
 .header {
   margin: 2rem 0;
   display: flex;
@@ -38,18 +42,38 @@ body {
 
 .main {
   margin: 2rem 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.main h3 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.main h3::before {
+  content: "\25cb   ";
+}
+
+.main h3::after {
+  content: "   \25cb";
 }
 
 .main__left {
-  background-color: red;
-  flex-grow: 1;
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+  text-align: center;
+  line-height: 2;
+}
+
+.main__left ul {
+  list-style-type: none;
 }
 
 .main__right {
-  background-color: green;
-  flex-grow: 2;
   height: 500px;
 }
 
