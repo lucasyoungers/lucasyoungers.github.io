@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    width: 90vw;
+  }
+}
