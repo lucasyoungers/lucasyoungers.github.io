@@ -4,34 +4,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
   <title>Lucas Youngers</title>
 </head>
 <body>
   <header class="header">
-    <img src="assets/profile.png" alt="a picture of myself" class="profile-picture">
-    <h1 class="name">Lucas Youngers</h1>
-    <h2 class="title">TA of Web Development</h2>
+    <img class="header__image" src="assets/profile.png" alt="a picture of myself">
+    <h1 class="header__name">Lucas Youngers</h1>
+    <h2 class="header__position">TA of Web Development</h2>
   </header>
-  <main class="main">
-    <section class="main__left">
-      <section class="main__left__section">
-        <h3>Connect</h3>
+  <main class="content">
+    <section class="left">
+      <section class="left__section">
+        <h3 class="left__heading">Connect</h3>
         <p>(425) 651-2635</p>
         <p>lucasyoungers@outlook.com</p>
         <p><a href="https://www.linkedin.com/in/lucasyoungers/">linkedin.com/in/lucasyoungers</a></p>
       </section>
-      <section class="main__left__section">
-        <h3>Projects</h3>
+      <section class="left__section">
+        <h3 class="left__heading">Projects</h3>
         <p><a href="https://github.com/lucasyoungers/UnDeck">Pokémon Deck Builder</a></p>
         <p><a href="https://pikapost.net/">Pokémon Fan Site</a></p>
         <p><a href="https://github.com/lucasyoungers/Padlock">Python Password Generator</a></p>
         <p><a href="https://github.com/lucasyoungers/random-deck-builder">Python Pokémon Deck Builder</a></p>
       </section>
-      <section class="main__left__section">
-        <h3>Skills</h3>
-        <ul>
+      <section class="left__section">
+        <h3 class="left__heading">Skills</h3>
+        <ul class="no-bullets">
           <li>Full Stack Development</li>
           <li>Web Frameworks</li>
           <li>Version Control Systems</li>
@@ -40,9 +40,9 @@
           <li>Avid Learner</li>
         </ul>
       </section>
-      <section class="main__left__section">
-        <h3>Coding Skills</h3>
-        <ul>
+      <section class="left__section">
+        <h3 class="left__heading">Coding Skills</h3>
+        <ul class="no-bullets">
           <li>JavaScript</li>
           <li>HTML &amp; CSS</li>
           <li>Python</li>
@@ -53,8 +53,91 @@
         </ul>
       </section>
     </section>
-    <section class="main__right">
-
+    <section class="right">
+      <section class="right__section">
+        <header class="right__header">
+          <svg class="right__icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+          </svg>
+          <h3 class="right__heading">Profile</h3>
+        </header>
+        <main class="right__content">
+          <p class="right__point--first">
+            Web Developer and TA at the University of Washington with a passion
+            for learning new technologies and languages. Worked closely with
+            professors, TAs, and students to enhance my knowledge of web
+            development, and to build teamwork and communication. Currently
+            developing a full-stack web application using Node.js with Express,
+            React, and Redux. Well versed in HTML5, CSS3, JavaScript, and
+            Python, and in the process of learning React and Vue.
+          </p>
+        </main>
+      </section>
+      <section class="right__section">
+        <header class="right__header">
+          <svg class="right__icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd" />
+            <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
+          </svg>
+          <h3 class="right__heading">Experience</h3>
+        </header>
+        <main class="right__content">
+          <section>
+            <h4 class="right__content__heading right__point--first">TA of Web Development at the University of Washington, Seattle</h4>
+            <h5 class="right__content__subheading">March 2022 &ndash; Current</h5>
+            <ul class="right__list">
+              <li class="right__item">Demonstrated comprehension of HTML5, CSS3, JavaScript, and Node.js with Express at a teaching level.</li>
+              <li class="right__item">Worked with students daily through teaching lecture-style discussion sections or during office hours.</li>
+              <li class="right__item">Collaborated closely with professors and other TAs and attended weekly staff meetings to improve teamwork and communication skills.</li>
+              <li class="right__item">Continually learned and adapted new technologies to develop my existing skillset.</li>
+            </ul>
+          </section>
+          <section>
+            <h4 class="right__content__heading right__point">Sales and Floor Support at Nordstrom Rack, Bellevue</h4>
+            <h5 class="right__content__subheading">June 2021 &ndash; August 2021</h5>
+            <ul class="right__list">
+              <li class="right__item">Demonstrated comprehension of HTML5, CSS3, JavaScript, and Node.js with Express at a teaching level.</li>
+              <li class="right__item">Worked with students daily through teaching lecture-style discussion sections or during office hours.</li>
+              <li class="right__item">Collaborated closely with professors and other TAs and attended weekly staff meetings to improve teamwork and communication skills.</li>
+              <li class="right__item">Continually learned and adapted new technologies to develop my existing skillset.</li>
+            </ul>
+          </section>
+        </main>
+      </section>
+      <section class="right__section">
+        <header class="right__header">
+          <svg class="right__icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
+          </svg>
+          <h3 class="right__heading">Education</h3>
+        </header>
+        <main class="right__content">
+          <section>
+            <h4 class="right__content__heading right__point--first">Bachelor of Computer Science, University of Washington</h4>
+            <h5 class="right__content__subheading">September 2022 &ndash; June 2025</h5>
+            <p>
+              Attended CSE 143X, the accelerated Java programming series, CSE 154: Intro to Web
+              Programming, and Math 318: Advanced Matrix Algebra Tools and Applications. Served as
+              TA for the Web Programming class the next quarter.
+            </p>
+          </section>
+          <section>
+            <h4 class="right__content__heading right__point">Associate of Arts and Sciences, Bellevue College</h4>
+            <h5 class="right__content__subheading">September 2019 &ndash; June 2021</h5>
+            <p>
+              Attended the college calculus series Math 151-154, and was one of 3 students to
+              receive the Dale Hoffman Calculus award for excellence in the subject. Took an
+              introductory course in Python programming, and continued using the language since.
+            </p>
+          </section>
+          <section>
+            <h4 class="right__content__heading right__point">Additional Education</h4>
+            <ul class="right__list">
+              <li class="right__item">Progressive Web Apps course using Vue.js</li>
+            </ul>
+          </section>
+        </main>
+      </section>
     </section>
   </main>
 </body>

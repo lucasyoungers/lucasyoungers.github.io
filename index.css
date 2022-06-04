@@ -22,59 +22,125 @@ a {
   align-items: center;
 }
 
-.profile-picture {
+.header__image {
   width: 15%;
   border-radius: 10%;
 }
 
-.name {
+.header__name {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 3em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
 
-.title {
+.header__position {
   font-size: 1em;
   text-transform: uppercase;
   color: #555;
 }
 
-.main {
+.content {
   margin: 2rem 0;
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
 
-.main h3 {
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+  line-height: 2;
+}
+
+.left {
+  text-align: center;
+}
+
+.left__heading,
+.right__heading {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 1.5em;
   text-transform: uppercase;
 }
 
-.main h3::before {
+.left__heading::before {
   content: "\25cb   ";
 }
 
-.main h3::after {
+.left__heading::after {
   content: "   \25cb";
 }
 
-.main__left {
-  height: 500px;
+.right__header {
+  display: flex;
+  column-gap: 2em;
+  margin-bottom: 1em;
+}
+
+.right__icon {
+  width: 1.5em;
+}
+
+.right__content {
+  margin-left: 0.65rem;
+  border-left: 2px solid black;
+  padding-left: 2.7rem;
   display: flex;
   flex-direction: column;
-  row-gap: 2em;
-  text-align: center;
-  line-height: 2;
+  row-gap: 1rem;
 }
 
-.main__left ul {
+.right__content__heading {
+  font-weight: 600;
+}
+
+.right__content__subheading {
+  color: grey;
+}
+
+.right__list {
+  margin-left: 2rem;
+  list-style-position: outside;
+}
+
+.right__item {
+  padding-left: 0.5rem;
+}
+
+.right__point,
+.right__point--first {
+  position: relative;
+}
+
+.right__point::after,
+.right__point--first::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 5px;
+  height: 5px;
+  border: 2px solid black;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transform: translate(-3.03rem, 0.75rem);
+}
+
+.right__point--first::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 5px;
+  height: 1rem;
+  top: 0;
+  left: 0;
+  transform: translateX(-2.92rem);
+}
+
+.no-bullets {
   list-style-type: none;
-}
-
-.main__right {
-  height: 500px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -84,7 +150,24 @@ a {
 }
 
 @media screen and (max-width: 800px) {
-  .main {
+  .content {
     display: block;
   }
 }
+
+/* .main__right main > section {
+  position: relative;
+}
+
+.main__right main > section::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  transform: translate(-5.5px, -5.5px);
+  width: 5px;
+  height: 5px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: white;
+} */
