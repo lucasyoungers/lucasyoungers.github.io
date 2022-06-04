@@ -44,6 +44,8 @@ a {
   margin: 2rem 0;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "left right";
 }
 
 .left,
@@ -56,6 +58,7 @@ a {
 
 .left {
   text-align: center;
+  grid-area: left;
 }
 
 .left__heading,
@@ -71,6 +74,10 @@ a {
 
 .left__heading::after {
   content: "   \25cb";
+}
+
+.right {
+  grid-area: right;
 }
 
 .right__header {
