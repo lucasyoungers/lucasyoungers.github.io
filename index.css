@@ -68,12 +68,23 @@ a {
   text-transform: uppercase;
 }
 
+.left__heading::before,
+.left__heading::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 5px;
+  height: 5px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
 .left__heading::before {
-  content: "\25cb   ";
+  transform: translate(-1rem, 1.05rem);
 }
 
 .left__heading::after {
-  content: "   \25cb";
+  transform: translate(0.35rem, 1.05rem);
 }
 
 .right {
